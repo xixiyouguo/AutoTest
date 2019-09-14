@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="thread" parallel="classes" thread-count="2">
+    <!--
+    thread-count:有几个线程
+
+    methods级别：不同方法会运行在不同的线程
+
+    test级别：不同test tag下的用例运行在不同的线程
+
+    classs级别：不同classes下的用例运行在不同的线程
+    -->
+    <test name="test1">
+        <classes>
+            <class name="cn.itheima.testng.thread.ThreadXML"></class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="cn.itheima.testng.thread.ThreadXML"></class>
+        </classes>
+    </test>
+</suite>
